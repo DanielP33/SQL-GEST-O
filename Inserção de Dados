@@ -10,11 +10,11 @@ SELECT * FROM Quartos;
 
 -- Inserir dados na tabela Clientes de forma múltipla
 INSERT INTO Clientes (Nome, Email, Telefone) VALUES
-('João Silva', 'joao.silva@example.com', '111-111-1111'),
-('Maria Fernandes', 'maria.fernandes@example.com', '222-222-2222'),
-('Pedro Santos', 'pedro.santos@example.com', '333-333-3333'),
-('Ana Oliveira', 'ana.oliveira@example.com', '444-444-4444'),
-('Rui Almeida', 'rui.almeida@example.com', '555-555-5555');
+('João Silva', 'joao.silva@example.com', '111-111-111'),
+('Maria Fernandes', 'maria.fernandes@example.com', '222-222-222'),
+('Pedro Santos', 'pedro.santos@example.com', '333-333-333'),
+('Ana Oliveira', 'ana.oliveira@example.com', '444-444-444'),
+('Rui Almeida', 'rui.almeida@example.com', '555-555-555');
 
 
 -- Inserir dados na tabela Funcionarios
