@@ -2,7 +2,8 @@
 INSERT INTO Quartos (Numero, Tipo, Preco, Estado) VALUES
 (101, 'Simples', 100.00, 'Disponível'),
 (102, 'Duplo', 150.00, 'Disponível'),
-(103, 'Suite', 300.00, 'Disponível');
+(103, 'Suite', 300.00, 'Disponível'),
+(104, 'Simples', 100.00, 'Ocupado');
 
 -- Verificar inserção de Quartos
 SELECT * FROM Quartos;
@@ -20,5 +21,16 @@ INSERT INTO Funcionarios (Nome, Posicao, Salario) VALUES
 ('Ana Costa', 'Recepcionista', 2000.00),
 ('Carlos Lima', 'Gerente', 4000.00);
 
--- Verificar inserção de Funcionarios
-SELECT * FROM Funcionarios;
+INSERT INTO Reservas (ClienteID, QuartoID, FuncionarioID, DataCheckIn, DataCheckOut, TotalReserva) VALUES
+(1, 1, 1, '2024-07-15', '2024-07-18', 350.00),
+(2, 2, 2, '2024-07-20', '2024-07-25', 750.00),
+(1, 3, 2, '2024-08-01', '2024-08-05', 1200.00);
+
+
+INSERT INTO Servicos (Nome, Preco) VALUES
+('Estacionamento', 15.00),
+('Bar', 25.00),
+('Wi-Fi', 15.00),
+('Spa', 100.00),
+('Ginásio', 50.00),
+('Piscina', 20.00);
