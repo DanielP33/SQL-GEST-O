@@ -1,4 +1,4 @@
-**Registrar uma nova reserva:**
+**1. Registrar uma nova reserva:**
 
 ```
 DELIMITER //
@@ -34,7 +34,7 @@ END//
 DELIMITER ;
 ```
 
-**Atualizar os dados de um cliente:**
+**2. Atualizar os dados de um cliente:**
 
 ```
 CREATE PROCEDURE AtualizarCliente (
@@ -50,7 +50,7 @@ BEGIN
 END;
 ```
 
-**Calcular o total de reservas de um determinado período:**
+**3. Calcular o total de reservas de um determinado período:**
 
 ```
 CREATE PROCEDURE TotalReservasPeriodo (
@@ -65,4 +65,14 @@ BEGIN
     WHERE DataCheckIn BETWEEN p_DataInicio AND p_DataFim;
 END;
 ```
+
+
+# Testes de Stored Procedures
+
+**1.**
+Corra uma vez e será aceite, corra duas testará também o trigger nº 2.
+```
+CALL RegistarReserva(1, 2, 1, '2024-07-20', '2024-07-25', 500.00);
+```
+
 
