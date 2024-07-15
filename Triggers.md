@@ -116,8 +116,6 @@ INSERT INTO Reservas (ClienteID, QuartoID, FuncionarioID, DataCheckIn, DataCheck
 **Trigger 3.**
 
 ```
-#Testar o Trigger 3.
-
 INSERT INTO `HotelManagement`.`Quartos` (`ID`, `Numero`, `Tipo`, `Preco`, `Estado`)
 VALUES ('4', '101', 'Simples', '132', 'Disponível');
 
