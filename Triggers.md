@@ -129,4 +129,4 @@ VALUES ('4', '101', 'Simples', '132', 'Disponível');
 INSERT INTO Servicos (Nome, Preco) VALUES
 ('Estacionamento', 15.00);
 # Será dado um erro " Não é permitido inserir serviços com o mesmo nome. "
-``
+```
