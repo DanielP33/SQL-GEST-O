@@ -8,25 +8,27 @@ INSERT INTO Quartos (Numero, Tipo, Preco, Estado) VALUES
 -- Verificar inserção de Quartos
 SELECT * FROM Quartos;
 
--- Inserir dados na tabela Clientes
+-- Inserir dados na tabela Clientes de forma múltipla
 INSERT INTO Clientes (Nome, Email, Telefone) VALUES
 ('João Silva', 'joao.silva@example.com', '111-111-1111'),
-('Maria Fernandes', 'maria.fernandes@example.com', '222-222-2222');
+('Maria Fernandes', 'maria.fernandes@example.com', '222-222-2222'),
+('Pedro Santos', 'pedro.santos@example.com', '333-333-3333'),
+('Ana Oliveira', 'ana.oliveira@example.com', '444-444-4444'),
+('Rui Almeida', 'rui.almeida@example.com', '555-555-5555');
 
--- Verificar inserção de Clientes
-SELECT * FROM Clientes;
 
 -- Inserir dados na tabela Funcionarios
 INSERT INTO Funcionarios (Nome, Posicao, Salario) VALUES
 ('Ana Costa', 'Recepcionista', 2000.00),
 ('Carlos Lima', 'Gerente', 4000.00);
 
+-- Inserir dados na tabela Reservas
 INSERT INTO Reservas (ClienteID, QuartoID, FuncionarioID, DataCheckIn, DataCheckOut, TotalReserva) VALUES
 (1, 1, 1, '2024-07-15', '2024-07-18', 350.00),
 (2, 2, 2, '2024-07-20', '2024-07-25', 750.00),
 (1, 3, 2, '2024-08-01', '2024-08-05', 1200.00);
 
-
+-- Inserir Servicos
 INSERT INTO Servicos (Nome, Preco) VALUES
 ('Estacionamento', 15.00),
 ('Bar', 25.00),
