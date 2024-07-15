@@ -1,6 +1,8 @@
 **Registrar uma nova reserva:**
 
 ```
+DELIMITER //
+
 CREATE PROCEDURE RegistarReserva (
     IN p_ClienteID INT,
     IN p_QuartoID INT,
@@ -10,9 +12,26 @@ CREATE PROCEDURE RegistarReserva (
     IN p_TotalReserva DECIMAL(10, 2)
 )
 BEGIN
-    INSERT INTO Reservas (ClienteID, QuartoID, FuncionarioID, DataCheckIn, DataCheckOut, TotalReserva)
-    VALUES (p_ClienteID, p_QuartoID, p_FuncionarioID, p_DataCheckIn, p_DataCheckOut, p_TotalReserva);
-END;
+    DECLARE estado_quarto ENUM('Disponível', 'Ocupado', 'Manutenção');
+    DECLARE estado_atual ENUM('Disponível', 'Ocupado', 'Manutenção');
+
+    -- Verifica se o quarto está disponível durante o período especificado
+    SELECT Estado INTO estado_atual
+    FROM Quartos
+    WHERE ID = p_QuartoID;
+
+    -- Se o quarto não estiver disponível, sinaliza um erro
+    IF estado_atual <> 'Disponível' THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Quarto não está disponível para reserva.';
+    ELSE
+        -- Se o quarto estiver disponível, insere a reserva
+        INSERT INTO Reservas (ClienteID, QuartoID, FuncionarioID, DataCheckIn, DataCheckOut, TotalReserva)
+        VALUES (p_ClienteID, p_QuartoID, p_FuncionarioID, p_DataCheckIn, p_DataCheckOut, p_TotalReserva);
+    END IF;
+END//
+
+DELIMITER ;
 ```
 
 **Atualizar os dados de um cliente:**
