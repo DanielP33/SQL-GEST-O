@@ -20,7 +20,10 @@ INSERT INTO Clientes (Nome, Email, Telefone) VALUES
 -- Inserir dados na tabela Funcionarios
 INSERT INTO Funcionarios (Nome, Posicao, Salario) VALUES
 ('Ana Costa', 'Recepcionista', 2000.00),
-('Carlos Lima', 'Gerente', 4000.00);
+('Carlos Lima', 'Gerente', 4000.00),
+('Marta Sousa', 'Recepcionista', 1800.00),
+('António Santos', 'Cozinheiro', 2200.00),
+('Sofia Oliveira', 'Camareira', 1600.00);
 
 -- Inserir dados na tabela Reservas
 INSERT INTO Reservas (ClienteID, QuartoID, FuncionarioID, DataCheckIn, DataCheckOut, TotalReserva) VALUES
@@ -36,3 +39,4 @@ INSERT INTO Servicos (Nome, Preco) VALUES
 ('Spa', 100.00),
 ('Ginásio', 50.00),
 ('Piscina', 20.00);
+
