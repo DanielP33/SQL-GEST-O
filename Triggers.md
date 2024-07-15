@@ -120,7 +120,6 @@ INSERT INTO `HotelManagement`.`Quartos` (`ID`, `Numero`, `Tipo`, `Preco`, `Estad
 VALUES ('4', '101', 'Simples', '132', 'Disponível');
 
 # Será dado um erro, "Não é permitido inserir quartos com o mesmo número" .
-
 ```
 **Trigger 4.**
 ```
