@@ -83,4 +83,5 @@ Registra os diferentes serviços adicionais oferecidos pelo hotel, como café da
 Esta tabela mantém o registro dos pedidos de serviços feitos pelos clientes durante suas estadias. Cada pedido recebe um ID único e está vinculado a uma reserva específica, a um serviço solicitado, ao funcionário responsável pelo atendimento do pedido, além da quantidade e do preço total do serviço solicitado.
 
 **Conclusão**
+
 Essas tabelas em conjunto formam a estrutura básica de um sistema de banco de dados para gestão de um hotel, permitindo o controle e organização eficientes das operações relacionadas a quartos, clientes, funcionários, reservas e serviços oferecidos.
