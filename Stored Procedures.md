@@ -37,6 +37,8 @@ DELIMITER ;
 **2. Atualizar os dados de um cliente:**
 
 ```
+DELIMITER //
+
 CREATE PROCEDURE AtualizarCliente (
     IN p_ID INT,
     IN p_Nome VARCHAR(100),
@@ -44,10 +46,14 @@ CREATE PROCEDURE AtualizarCliente (
     IN p_Telefone VARCHAR(15)
 )
 BEGIN
+    -- Atualiza o cliente na tabela Clientes com base no ID fornecido
     UPDATE Clientes 
     SET Nome = p_Nome, Email = p_Email, Telefone = p_Telefone 
     WHERE ID = p_ID;
-END;
+END//
+
+DELIMITER ;
+
 ```
 
 **3. Calcular o total de reservas de um determinado período:**
@@ -76,3 +82,9 @@ CALL RegistarReserva(1, 2, 1, '2024-07-20', '2024-07-25', 500.00);
 ```
 
 
+**2.**
+A Partir deste call é muito fácil atualizar o cliente.
+```
+CALL AtualizarCliente(1, 'Novo Nome', 'novoemail@example.com', '123-456-7890');
+select * from clientes
+```
