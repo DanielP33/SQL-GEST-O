@@ -88,3 +88,11 @@ A Partir deste call é muito fácil atualizar o cliente.
 CALL AtualizarCliente(1, 'Novo Nome', 'novoemail@example.com', '123-456-7890');
 select * from clientes
 ```
+
+**3.**
+A Partir deste call podemos ver o total de reservas de um determinado período.
+```
+CALL TotalReservasPeriodo('2024-07-15', '2024-07-18');
+select * from Reservas
+```
+
