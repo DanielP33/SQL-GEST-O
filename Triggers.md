@@ -199,7 +199,7 @@ INSERT INTO Servicos (Nome, Preco) VALUES
 
 **BEFORE INSERT ON Servicos:** Especifica que o trigger deve ser acionado antes da inserção de um novo registro na tabela Servicos.
 
-**FOR EACH ROW: **Indica que o trigger deve ser executado para cada linha afetada pela operação de inserção.
+**FOR EACH ROW:** Indica que o trigger deve ser executado para cada linha afetada pela operação de inserção.
 
 **BEGIN... END:** Define o corpo do trigger, que contém as instruções SQL a serem executadas quando o trigger é acionado.
 
@@ -207,7 +207,7 @@ INSERT INTO Servicos (Nome, Preco) VALUES
 
 **SELECT COUNT(*) INTO num_ocorrencias FROM Servicos WHERE Nome = NEW.Nome:** Esta consulta SQL conta quantos serviços já existem na tabela Servicos com o mesmo nome que o novo serviço (NEW.Nome).
 
-IF num_ocorrencias > 0 THEN: Verifica se já existe algum serviço com o mesmo nome.
+**IF num_ocorrencias > 0 THEN:** Verifica se já existe algum serviço com o mesmo nome.
 
 **SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Não é permitido inserir serviços com o mesmo nome.':** Se houver serviços encontrados com o mesmo nome, o comando SIGNAL é utilizado para emitir um erro personalizado (SQLSTATE '45000') com a mensagem especificada, impedindo assim a inserção do novo serviço com nome duplicado.
 
