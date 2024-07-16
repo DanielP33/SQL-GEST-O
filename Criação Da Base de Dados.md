@@ -67,7 +67,8 @@ Esta tabela armazena informações sobre os quartos disponíveis no hotel. Cada 
 **Tabela Clientes**
 
 Aqui são registrados os dados dos clientes que se hospedam no hotel. Cada cliente tem um ID único, um nome completo, um endereço de email e um número de telefone.
-Tabela Funcionarios
+
+**Tabela Funcionarios**
 
 Registra informações sobre os funcionários do hotel. Cada funcionário tem um ID único, um nome completo, uma posição dentro do hotel (como recepcionista, gerente, etc.) e um salário.
 
