@@ -59,17 +59,20 @@ DELIMITER ;
 **3. Calcular o total de reservas de um determinado período:**
 
 ```
+DELIMITER //
+
 CREATE PROCEDURE TotalReservasPeriodo (
     IN p_DataInicio DATE,
-    IN p_DataFim DATE,
-    OUT p_TotalReservas DECIMAL(10, 2)
+    IN p_DataFim DATE
 )
 BEGIN
-    SELECT SUM(TotalReserva) 
-    INTO p_TotalReservas 
-    FROM Reservas 
+    -- Calcula a soma das reservas no período especificado e exibe o resultado
+    SELECT IFNULL(SUM(TotalReserva), 0.00) AS TotalReservas
+    FROM Reservas
     WHERE DataCheckIn BETWEEN p_DataInicio AND p_DataFim;
-END;
+END//
+
+DELIMITER ;
 ```
 
 
