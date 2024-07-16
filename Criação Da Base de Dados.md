@@ -74,7 +74,8 @@ Registra informações sobre os funcionários do hotel. Cada funcionário tem um
 **Tabela Reservas**
 
 Esta tabela mantém o registro das reservas feitas pelos clientes. Cada reserva recebe um ID único e está associada a um cliente, a um quarto específico e ao funcionário que fez a reserva. Além disso, são registradas as datas de check-in e check-out, e o valor total da reserva.
-Tabela Servicos
+
+**Tabela Servicos**
 
 Registra os diferentes serviços adicionais oferecidos pelo hotel, como café da manhã, lavanderia, entre outros. Cada serviço possui um ID único, um nome descritivo e um preço associado.
 
