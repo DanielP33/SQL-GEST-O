@@ -1,3 +1,6 @@
+# Inserção de Dados
+
+```
 -- Inserir dados na tabela Quartos
 INSERT INTO Quartos (Numero, Tipo, Preco, Estado) VALUES
 (101, 'Simples', 100.00, 'Disponível'),
@@ -39,4 +42,4 @@ INSERT INTO Servicos (Nome, Preco) VALUES
 ('Spa', 100.00),
 ('Ginásio', 50.00),
 ('Piscina', 20.00);
-
+```
