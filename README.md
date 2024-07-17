@@ -1,9 +1,9 @@
 # Sistema de Gestão de Hotel
 
-## Objetivo & Conteúdos
+## Objetivos & Conteúdos
 
 Desenvolver um sistema de gestão de um hotel que permita o controlo de quartos, reservas, clientes e funcionários.
-- [Objetios Principais](https://github.com/DanielP33/SQL-Gestao-Hotel/blob/main/Objetivos.md)
+- [Objetivos Principais](https://github.com/DanielP33/SQL-Gestao-Hotel/blob/main/Objetivos.md)
 - [Criação da BD e Tabelas](https://github.com/DanielP33/SQL-Gestao-Hotel/blob/main/Cria%C3%A7%C3%A3o%20Da%20Base%20de%20Dados.md)
 - [Inserção de Dados](https://github.com/DanielP33/SQL-Gestao-Hotel/blob/main/Inser%C3%A7%C3%A3o%20de%20Dados.md)
 - [Consultas de SQL](https://github.com/DanielP33/SQL-Gestao-Hotel/blob/main/Consultas%20de%20SQL.md)
