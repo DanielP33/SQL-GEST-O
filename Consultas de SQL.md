@@ -1,3 +1,5 @@
+# Consultas de SQL
+
 **Listar todos os quartos disponíveis com os respectivos tipos e preços:**
 ```
 SELECT Numero, Tipo, Preco 
