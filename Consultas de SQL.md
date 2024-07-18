@@ -2,7 +2,7 @@
 
 **Listar todos os quartos disponíveis com os respectivos tipos e preços:**
 ```
-SELECT Numero, Tipo, Preco 
+SELECT Numero, Tipo, Preco, Estado
 FROM Quartos 
 WHERE Estado = 'Disponível';
 ```
