@@ -99,9 +99,9 @@ DELIMITER ;
 SELECT * FROM Quartos;
 
 INSERT INTO Reservas (ClienteID, QuartoID, FuncionarioID, DataCheckIn, DataCheckOut, TotalReserva) VALUES
-(3, 3, 3, '2024-07-15', '2024-07-18', 350.00);
+(4, 4, 4, '2024-07-15', '2024-07-18', 350.00);
 
-# O Quarto 103 tornar-se-à Ocupado.
+# O Quarto 104 tornar-se-à Ocupado.
 ```
 
 **Trigger 2.**
