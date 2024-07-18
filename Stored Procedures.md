@@ -95,7 +95,7 @@ CALL RegistarReserva(1, 2, 1, '2024-07-20', '2024-07-25', 500.00);
 A Partir deste call é muito fácil atualizar o cliente.
 ```
 CALL AtualizarCliente(1, 'Novo Nome', 'novoemail@example.com', '123-456-7890');
-select * from clientes
+select * from Clientes
 ```
 
 **Stored Procedure 3.**
