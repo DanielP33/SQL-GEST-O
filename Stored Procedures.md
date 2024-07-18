@@ -84,7 +84,7 @@ DELIMITER ;
 
 Corra uma vez e será aceite, corra duas testará também o trigger nº 2.
 ```
-CALL RegistarReserva(1, 2, 1, '2024-07-20', '2024-07-25', 500.00);
+CALL RegistarReserva(5, 5, 5, '2024-07-20', '2024-07-25', 500.00);
 ```
 
 
@@ -94,7 +94,7 @@ CALL RegistarReserva(1, 2, 1, '2024-07-20', '2024-07-25', 500.00);
 
 A Partir deste call é muito fácil atualizar o cliente.
 ```
-CALL AtualizarCliente(1, 'Novo Nome', 'novoemail@example.com', '123-456-7890');
+CALL AtualizarCliente(1, 'Johnny Paulo', 'johnnypaulo@example.com', '123-456-7890');
 select * from Clientes
 ```
 
