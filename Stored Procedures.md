@@ -94,7 +94,7 @@ CALL RegistarReserva(5, 5, 5, '2024-07-20', '2024-07-25', 500.00);
 
 A Partir deste call é muito fácil atualizar o cliente.
 ```
-CALL AtualizarCliente(1, 'Johnny Paulo', 'johnnypaulo@example.com', '123-456-7890');
+CALL AtualizarCliente(2, 'Johnny Paulo', 'johnnypaulo@example.com', '222-222-222');
 select * from Clientes
 ```
 
